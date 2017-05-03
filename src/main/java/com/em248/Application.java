@@ -25,7 +25,7 @@ class OracleJdbcTest{
     private static String driver = "oracle.jdbc.driver.OracleDriver";       //驱动
     private static String url = "jdbc:oracle:thin:@//127.0.0.1:1521/orcl";  //连接字符串
     private static String username = "system";      // 用户名
-    private static String password = "Anxpp0618";   // 密码
+    private static String password = "oracle";   // 密码
     //获取连接对象
     private static synchronized Connection getConn(){
         if(conn==null){
@@ -49,7 +49,7 @@ class OracleJdbcTest{
             ResultSet rs = pstmt.executeQuery();
             while (rs.next()) {
                 String name = rs.getString("name");
-                System.out.println(name);
+                System.out.println(name + "?");
             }
             rs.close();
             pstmt.close();
