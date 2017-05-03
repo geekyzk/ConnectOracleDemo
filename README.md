@@ -1,2 +1,4 @@
 # ConnectOracleDemo
-Create Project
+
+已经测试能连接12c
+
